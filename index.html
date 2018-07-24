@@ -1,124 +1,554 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Барбершоп "Бородинский"</title>
+	<meta charset="UTF-8">
+	<title>Alexis</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Poppins:400,500,600|Sacramento">
+	<link rel="stylesheet" href="stylesheets/main-style.css">
+	<link rel="stylesheet" href="stylesheets/media.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header class="main-header">
-    <div class="container">
-      <nav class="main-navigation">
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Прайс-лист</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="user-block">
-        <a href="#" class="login">Вход</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="index-logo">
-      <img src="img/Logo.png" width="368" height="204" alt="Барбершоп 'Бородинский'">
-    </div>
-    <section class="features">
-      <div class="features-item">
-        <b class="features-name">Быстро</b>
-        <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладетель стильной стрижки-минутки!</p>
-      </div>
-      <div class="features-item">
-        <b class="features-name">Круто</b>
-        <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино!</p>
-      </div>
-      <div class="features-item">
-        <b class="features-name">Дорого</b>
-        <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
-      </div>
-    </section>
-    <div class="index-content">
-      <div class="index-content-left">
-        <h2 class="index-content-title">Новости</h2>
-        <ul class="news-preview">
-          <li>
-            <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время</p>
-            <time datetime="2018-03-05">5 марта</time>
-          </li>
-          <li>
-            <p>В нашей команде пополнение, борис «бритва» стригунец, обладетель множества титулов и наград пополнил наши стройные ряды</p>
-            <time datetime="2018-03-01">1 марта</time>
-          </li>
-        </ul>
-        <a href="#" class="btn">Все новости</a>
-      </div>
-      <div class="index-content-right">
-        <h2 class="index-content-title">Фотогалерея</h2>
-        <div class="gallery">
-          <figure class="gallery-content">
-            <img src="img/photo1.png" width="286" height="164" alt="">
-          </figure>
-          <button class="btn gallery-prev">Назад</button>
-          <button class="btn gallery-next">Вперед</button>
-        </div>
-      </div>
-    </div>
-    <div class="index-content">
-      <div class="index-content-left">
-        <h2 class="index-content-title">Контактная информация</h2>
-        <p>
-           Барбершоп «Бородинский»<br>
-           Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-           Телефон: +7 (495) 666-02-66
-        </p>
-        <p>
-           Время работы:<br>
-           Пн — Пт: с 10:00 до 22:00<br>
-           Сб — Вс: с 10:00 до 19:00
-        </p>
-        <a href="#" class="btn">Как проехать</a>
-        <a href="#" class="btn">Обратная связь</a>
-      </div>
-      <div class="index-content-right">
-        <h2 class="index-content-title">Записаться</h2>
-        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="text" name="date" value="" placeholder="Дата">
-          <input type="text" name="time" value="" placeholder="Время">
-          <input type="text" name="name" value="" placeholder="Ваше имя">
-          <input type="tel" name="phone" value="" placeholder="Телефон">
-          <button class="btn" type="submit">Отправить</button>
-        </form>
-      </div>
-    </div>
-  </main>
-
-  <footer class="main-footer">
-    <div class="container">
-      <section class="footer-contacts">
-        Барбершоп «Бородинский»<br>
-        Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        <a href="#">Как нас найти?</a><br>
-        Телефон: +7 (495) 666-02-66
-      </section>
-      <section class="footer-social">
-        <p>Давайте дружить!</p>
-        <a  class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a  class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a  class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </section>
-      <section class="footer-copyright">
-        <p>Разработано:</p>
-        <a class="btn" href="https://htmlacademy.ru">HTMLACADEMY.RU</a>
-      </section>
-    </div>
-  </footer>
-
+	<header class="page-header">
+		<div class="container">
+			<div class="header-content-overlay">
+				<h2 class="header-content-logo">Alexis</h2>
+				<nav>
+					<ul class="header-content-navigation">
+						<li><a href="#about">About us</a></li>
+						<li><a href="#focus">Our Focus</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#team">Our Team</a></li>
+						<li><a href="#steps">Work Steps</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="intro">
+			<div class="container">
+				<div class="intro-content-overlay">
+					<h1 class="intro-content-heading">We design things with love and passion</h1>
+					<a href="#portfolio" class="intro-content-link">Our works</a>
+					<div class="intro-content-features">
+						<div class="feature-item"><span>Fixed price projects</span></div>
+						<div class="feature-item"><span>Receive on time</span></div>
+						<div class="feature-item"><span>Satisfaction guranteed</span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about" id="about">
+			<div class="container">
+				<div class="about-content-overlay">
+					<img src="images/about-image.png" alt="image" class="about-content-image">
+					<article class="about-content-info">
+						<div class="section-heading-overlay">
+							<h2 class="section-heading">About Us.</h2>
+						</div>
+						<p>Analytics release series A financing launch party interaction design android angel investor. Vesting period social media sales conversion launch party rockstar incubator customer social proof graphical user interface technology supply chain. Non-disclosure agreement rockstar creative partner network launch party social proof paradigm shift long tail influencer. </p>
+						<p>Monetization validation success. Seed round channels product management. Customer non-disclosure agreement strategy android growth hacking ramen buyer.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="focus" id="focus">
+			<div class="container">
+				<div class="focus-content-overlay">
+					<header class="section-head">
+						<h2 class="section-head-heading">Our Focus.</h2>
+						<p class="section-head-text">We understand your requirement and provide quality works.</p>
+					</header>
+					<div class="focus-content-services">
+						<div class="service-item">
+							<div class="service-item-icon"></div>
+							<h3 class="service-item-heading">Web Design</h3>
+							<p class="service-item-text">Analytics release series A financing launch party interaction design android angel investor.</p>
+						</div>
+						<div class="service-item">
+							<div class="service-item-icon"></div>
+							<h3 class="service-item-heading">UX Design</h3>
+							<p class="service-item-text">Analytics release series A financing launch party interaction design android angel investor.</p>
+						</div>
+						<div class="service-item">
+							<div class="service-item-icon"></div>
+							<h3 class="service-item-heading">Photography</h3>
+							<p class="service-item-text">Analytics release series A financing launch party interaction design android angel investor.</p>
+						</div>
+						<div class="service-item">
+							<div class="service-item-icon"></div>
+							<h3 class="service-item-heading">App Development</h3>
+							<p class="service-item-text">Analytics release series A financing launch party interaction design android angel investor.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="video">
+			<div class="container">
+				<div class="video-content-overlay">
+					<b>Explore Our Awesomeness</b>
+					<img src="icons/PlayButton.svg" alt="play button" class="playButton">
+					<p>Click to play the video</p>
+				</div>
+			</div>
+		</section>
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+				<div class="portfolio-content-overlay">
+					<header class="section-head">
+						<h2 class="section-head-heading">Portfolio.</h2>
+						<p class="section-head-text">We understand your requirement and provide quality works.</p>
+					</header>
+					<article class="portfolio-items">
+						<div class="portfolio-item">
+							<img src="images/item 1.png" alt="Project one" class="portfolio-item-image">
+							<img src="icons/ImagePlus.svg" alt="add" class="portfolio-item-icon">
+							<span class="portfolio-item-description">Project One</span>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/item 2.png" alt="Project one" class="portfolio-item-image">
+							<img src="icons/ImagePlus.svg" alt="add" class="portfolio-item-icon">
+							<span class="portfolio-item-description">Project Two</span>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/item 3.png" alt="Project one" class="portfolio-item-image">
+							<img src="icons/ImagePlus.svg" alt="add" class="portfolio-item-icon">
+							<span class="portfolio-item-description">Project Three</span>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/item 4.png" alt="Project one" class="portfolio-item-image">
+							<img src="icons/ImagePlus.svg" alt="add" class="portfolio-item-icon">
+							<span class="portfolio-item-description">Project Four</span>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/item 5.png" alt="Project one" class="portfolio-item-image">
+							<img src="icons/ImagePlus.svg" alt="add" class="portfolio-item-icon">
+							<span class="portfolio-item-description">Project Five</span>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/item 6.png" alt="Project one" class="portfolio-item-image">
+							<img src="icons/ImagePlus.svg" alt="add" class="portfolio-item-icon">
+							<span class="portfolio-item-description">Project Six</span>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/item 7.png" alt="Project one" class="portfolio-item-image">
+							<img src="icons/ImagePlus.svg" alt="add" class="portfolio-item-icon">
+							<span class="portfolio-item-description">Project Seven</span>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/item 8.png" alt="Project one" class="portfolio-item-image">
+							<img src="icons/ImagePlus.svg" alt="add" class="portfolio-item-icon">
+							<span class="portfolio-item-description">Project Eight</span>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/item 9.png" alt="Project one" class="portfolio-item-image">
+							<img src="icons/ImagePlus.svg" alt="add" class="portfolio-item-icon">
+							<span class="portfolio-item-description">Project Nine</span>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="team" id="team">
+			<div class="container">
+				<div class="team-content-overlay">
+					<header class="section-head">
+						<h2 class="section-head-heading">Our Team.</h2>
+						<p class="section-head-text">We understand your requirement and provide quality works.</p>
+					</header>
+					<article class="team-members">
+						<div data-target="team-member_info_1" class="team-member">
+							<div class="team-member_card">
+								<img src="images/member 1.png" alt="Member Photo" class="team-member_card__photo">
+								<b class="team-member_card__name">Michael Schmitt</b><br>
+								<span class="team-member_card__post">Founder &amp; CEO</span>
+							</div>
+						</div>
+						<div data-target="team-member_info_2" class="team-member">
+							<div class="team-member_card">
+								<img src="images/member 2.png" alt="Member Photo" class="team-member_card__photo">
+								<b class="team-member_card__name">David Krämer</b><br>
+								<span class="team-member_card__post">Lead Developer</span>
+							</div>
+						</div>
+						<div data-target="team-member_info_3" class="team-member">
+							<div class="team-member_card">
+								<img src="images/member 3.png" alt="Member Photo" class="team-member_card__photo">
+								<b class="team-member_card__name">Anna Schröder</b><br>
+								<span class="team-member_card__post">Designer</span>
+							</div>
+						</div>
+						<div data-target="team-member_info_4" class="team-member">
+							<div class="team-member_card">
+								<img src="images/member 4.png" alt="Member Photo" class="team-member_card__photo">
+								<b class="team-member_card__name">Jason Teichmann</b><br>
+								<span class="team-member_card__post">Consultant</span>
+							</div>
+						</div>
+						<div class="team-member_info team-member_info_1">
+							<div class="team-member_info-overlay">
+								<h3 class="team-member_info__name">About Michael.</h3>
+								<p class="team-member_info__text">Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding facebook seed round A/B testing mass market.
+								</p>
+							</div>
+							<div class="socials"></div>
+						</div>
+						<div class="team-member_info team-member_info_2">
+							<div class="team-member_info-overlay">
+								<h3 class="team-member_info__name">About David.</h3>
+								<p class="team-member_info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos facere soluta eligendi doloribus sunt minus, amet sit. Modi possimus consectetur culpa, itaque odio similique suscipit, distinctio, tempore tempora quisquam aspernatur.
+								</p>
+							</div>
+							<div class="socials"></div>
+						</div>
+						<div class="team-member_info team-member_info_3">
+							<div class="team-member_info-overlay">
+								<h3 class="team-member_info__name">About Anna.</h3>
+								<p class="team-member_info__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Первую, напоивший, возвращайся безорфографичный что решила текста толку единственное lorem путь одна скатился рекламных о журчит обеспечивает! Бросил, предупредила вопрос.
+								</p>
+							</div>
+							<div class="socials"></div>
+						</div>
+						<div class="team-member_info team-member_info_4">
+							<div class="team-member_info-overlay">
+								<h3 class="team-member_info__name">About Jason.</h3>
+								<p class="team-member_info__text">Jason — выпускник инженерно-экономического факультета киевского Национального Университета Технологи и Дизайна. За время обучения проявил себя как старательный студент, постоянно повышал свой профессиональный уровень. Jason неоднократно принимал участие в научных конференциях. Выступал с содержательными докладами по тематике маркетинга. Выпускник также принимал участие в межуниверситетской студенческой конференции «Новое поколение Маркетологов», где выступил с темой: «Падение медиа-бюджетов в условиях финансового кризиса».
+								</p>
+							</div>
+							<div class="socials"></div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="stats">
+			<div class="container">
+				<article class="stats-elements">
+					<div class="stats-element">
+						<img src="icons/Progress.svg" alt="feature icon" class="stats-element__image">
+						<span class="stats-element__number">12,458</span>
+						<span class="stats-element__definition">Projects Completed</span>
+						<div class="stats-element__circle">
+							<div class="stats-element__circle-outside"></div>
+							<div class="stats-element__circle-between"></div>
+							<div class="stats-element__circle-inside"></div>
+						</div>
+					</div>
+					<div class="stats-element">
+						<img src="icons/Clients.svg" alt="feature icon" class="stats-element__image">
+						<span class="stats-element__number">1,796</span>
+						<span class="stats-element__definition">Satisfied Clients</span>
+						<div class="stats-element__circle">
+							<div class="stats-element__circle-outside"></div>
+							<div class="stats-element__circle-between"></div>
+							<div class="stats-element__circle-inside"></div>
+						</div>
+					</div>
+					<div class="stats-element">
+						<img src="icons/Feedbacks.svg" alt="feature icon" class="stats-element__image">
+						<span class="stats-element__number">1,000</span>
+						<span class="stats-element__definition">Positive Feedbacks</span>
+						<div class="stats-element__circle">
+							<div class="stats-element__circle-outside"></div>
+							<div class="stats-element__circle-between"></div>
+							<div class="stats-element__circle-inside"></div>
+						</div>
+					</div>
+					<div class="stats-element">
+						<img src="icons/Gifts.svg" alt="feature icon" class="stats-element__image">
+						<span class="stats-element__number">1,500</span>
+						<span class="stats-element__definition">Freebies Released</span>
+						<div class="stats-element__circle">
+							<div class="stats-element__circle-outside"></div>
+							<div class="stats-element__circle-between"></div>
+							<div class="stats-element__circle-inside"></div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section class="process" id="steps">
+			<div class="container">
+				<header class="section-head">
+					<h2 class="section-head-heading">Work Steps.</h2>
+					<p class="section-head-text">We understand your requirement and provide quality works.</p>
+				</header>
+				<article class="process-steps">
+					<div class="step-item">
+						<img src="images/step 1.png" alt="placeholder+image">
+						<div class="step-item-description">
+							<b class="step-item-description__number">01</b>
+							<h2 class="step-item-description__heading">Project Understanding</h2>
+							<p class="step-item-description__text">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.</p>
+						</div>
+					</div>
+					<div class="step-item">
+						<img src="images/step 2.png" alt="placeholder+image">
+						<div class="step-item-description">
+							<b class="step-item-description__number">02</b>
+							<h2 class="step-item-description__heading">Research &amp; Planning </h2>
+							<p class="step-item-description__text">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.</p>
+						</div>
+					</div>
+					<div class="step-item">
+						<img src="images/step 3.png" alt="placeholder+image">
+						<div class="step-item-description">
+							<b class="step-item-description__number">03</b>
+							<h2 class="step-item-description__heading">Wireframe &amp; Design</h2>
+							<p class="step-item-description__text">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.</p>
+						</div>
+					</div>
+					<div class="step-item">
+						<img src="images/step 4.png" alt="placeholder+image">
+						<div class="step-item-description">
+							<b class="step-item-description__number">04</b>
+							<h2 class="step-item-description__heading">Development</h2>
+							<p class="step-item-description__text">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.</p>
+						</div>
+					</div>	
+				</article>
+			</div>
+		</section>
+		<section class="pricing" id="pricing">
+			<div class="container">
+				<div class="pricing-content-overlay">
+					<header class="section-head">
+						<h2 class="section-head-heading">Pricing Table.</h2>
+						<p class="section-head-text">We understand your requirement and provide quality works.</p>
+					</header>
+					<article class="pricing-table">
+						<div class="pricing-table-item">
+							<h3 class="pricing-table-item__plan">Starter</h3>
+							<div class="pricing-table-item__price">
+								<div class="circle-outside"></div>
+								<div class="circle-between"></div>
+								<div class="circle-inside">
+									<span>$125</span>
+									<span>Per Month</span>
+								</div>
+							</div>
+							<div class="pricing-table-item__features">
+								<span><b>200GB</b> Online Storage</span><br>
+								<span><b>20</b> Files Per Day</span><br>
+								<span><b>2TB</b> Monthly Bandwidth</span><br>
+								<span class="acceptable">Secure Platform</span><br>
+								<span class="unacceptable">24/7 Customer Support</span><br>
+								<span class="unacceptable">Fast &amp; Reliable</span>
+							</div>
+							<button type="button" class="button pricing-table-item__button">Get started</button>
+						</div>
+						<div class="pricing-table-item">
+							<h3 class="pricing-table-item__plan">Ultimate</h3>
+							<div class="pricing-table-item__price">
+								<div class="circle-outside"></div>
+								<div class="circle-between"></div>
+								<div class="circle-inside">
+									<span>$195</span>
+									<span>Per Month</span>
+								</div>
+							</div>
+							<div class="pricing-table-item__features">
+								<span><b>800GB</b> Online Storage</span><br>
+								<span><b>Unlimited</b> Files Per Day</span><br>
+								<span><b>10TB</b> Monthly Bandwidth</span><br>
+								<span class="acceptable">Secure Platform</span><br>
+								<span class="acceptable">24/7 Customer Support</span><br>
+								<span class="acceptable">Fast &amp; Reliable</span>
+							</div>
+							<button type="button" class="button pricing-table-item__button">Get started</button>
+						</div>
+						<div class="pricing-table-item">
+							<h3 class="pricing-table-item__plan">Professional</h3>
+							<div class="pricing-table-item__price">
+								<div class="circle-outside"></div>
+								<div class="circle-between"></div>
+								<div class="circle-inside">
+									<span>$145</span>
+									<span>Per Month</span>
+								</div>
+							</div>
+							<div class="pricing-table-item__features">
+								<span><b>500GB</b> Online Storage</span><br>
+								<span><b>50</b> Files Per Day</span><br>
+								<span><b>5TB</b> Monthly Bandwidth</span><br>
+								<span class="acceptable">Secure Platform</span><br>
+								<span class="unacceptable">24/7 Customer Support</span><br>
+								<span class="acceptable">Fast &amp; Reliable</span>
+							</div>
+							<button type="button" class="button pricing-table-item__button">Get started</button>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="testimonials" id="testimonials">
+			<div class="container">
+				<header class="section-head">
+					<h2 class="section-head-heading">Testimonials.</h2>
+					<p class="section-head-text">We understand your requirement and provide quality works.</p>
+				</header>
+				<article class="testimonial-block">
+					<img src="images/testimonials.png" alt="photo">
+					<div class="testimonial-block-info">
+						<p class="testimonial-block-info__text">Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership equity series A financing network effects user experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.</p>
+						<span class="testimonial-block-info__sign">Melina</span>
+						<span class="testimonial-block-info__name">Melina Albrecht</span>
+						<span class="testimonial-block-info__post">Founder, TingTong</span>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section class="why">
+			<div class="container">
+				<header class="section-head">
+					<h2 class="section-head-heading">Why Select Us?</h2>
+					<p class="section-head-text">We understand your requirement and provide quality works.</p>
+				</header>
+				<article class="why-features">
+					<div class="why-features__item">
+						<img src="icons/Why1.svg" alt="" class="why-features__item__image">
+						<h3 class="why-features__item__heading">Business<br>Growth</h3>
+						<p class="why-features__item__text">Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.</p>
+					</div>
+					<div class="why-features__item">
+						<img src="icons/Why2.svg" alt="" class="why-features__item__image">
+						<h3 class="why-features__item__heading">Unlimited<br>Revisions</h3>
+						<p class="why-features__item__text">Technology founders churn rate niche market long tail release iteration burn rate backing. Churn rate accelerator.</p>
+					</div>
+					<div class="why-features__item">
+						<img src="icons/Why3.svg" alt="" class="why-features__item__image">
+						<h3 class="why-features__item__heading">Ultimate<br>Perfection</h3>
+						<p class="why-features__item__text">Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership.</p>
+					</div>
+					<div class="why-features__item">
+						<img src="icons/Why4.svg" alt="" class="why-features__item__image">
+						<h3 class="why-features__item__heading">Smart<br>experience</h3>
+						<p class="why-features__item__text">Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.</p>
+					</div>
+					<div class="why-features__item">
+						<img src="icons/Why5.svg" alt="" class="why-features__item__image">
+						<h3 class="why-features__item__heading">Strict<br>Deadline</h3>
+						<p class="why-features__item__text">Technology founders churn rate niche market long tail release iteration burn rate backing. Churn rate accelerator.</p>
+					</div>
+					<div class="why-features__item">
+						<img src="icons/Why6.svg" alt="" class="why-features__item__image">
+						<h3 class="why-features__item__heading">award-winning<br>company</h3>
+						<p class="why-features__item__text">Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership.</p>
+					</div>
+				</article>
+				<div class="cta">
+					<p class="cta__text">Start your journy with us now<button type="button" class="button cta__button">Get started</button></p>
+				</div>
+			</div>
+		</section>
+		<section class="blog" id="blog">
+			<div class="container">
+				<div class="section-head">
+					<h2 class="section-head-heading">Our Blog.</h2>
+					<p class="section-head-text">We understand your requirement and provide quality works.</p>
+				</div>
+				<article class="l-blog">
+					<div class="l-blog__current-news">
+						<div class="c-current__image-block">
+							<img src="images/blog-image.png" alt="Image of the article">
+							<div class="c-current__image-block__text">
+								<span class="c-current__image-block__name">Damian Schreiber</span>
+								<time class="c-current__image-block__date" datetime="2018-01-28">January 28, 2018</time>
+							</div>
+						</div>
+						<div class="c-current__info-block">
+							<h3 class="c-current__info-block__heading">Facebook’s CNN livestream will test its place in the second screen era</h3>
+							<p class="c-current__info-block__text">Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm <a href="#" class="c-current__info-block__link">Read Full Article »</a></p>
+						</div>
+					</div>
+					<div class="l-blog__news">
+						<div class="c-news-item">
+							<span class="c-news-item__name">Damian Schreiber</span>
+							<time class="c-news-item__date" datetime="2018-01-28">January 28, 2018</time>
+							<h3 class="c-news-item__heading">Google Street View adds virtual reality support</h3>
+							<p class="c-news-item__text">Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm <a href="#" class="c-news-item__link">Read Full Article »</a></p>
+						</div>
+						<div class="c-news-item">
+							<span class="c-news-item__name">Joe Pappalardo</span>
+							<time class="c-news-item__date" datetime="2018-01-15">January 15, 2018</time>
+							<h3 class="c-news-item__heading">Now NATO Says Russian “Hybrid Warfare” Could Start a Real War</h3>
+							<p class="c-news-item__text">The global alliance can now go to collective war if a member is subjected to “hybrid warfare.” The problem is <a href="https://www.popularmechanics.com/military/a22140482/nato-russia-hybrid-warfare-start-a-war/" target="_blank" class="c-news-item__link">Read Full Article »</a></p>
+						</div>
+						<div class="c-news-item">
+							<span class="c-news-item__name">Jonathan Schifman</span>
+							<time class="c-news-item__date" datetime="2018-01-03">January 03, 2018</time>
+							<h3 class="c-news-item__heading">THE ENTIRE HISTORY OF STEEL</h3>
+							<p class="c-news-item__text">From hunks of iron streaking through the sky, to the construction of skyscrapers and megastructures, this is the history of the world's greatest alloy <a href="https://www.popularmechanics.com/technology/infrastructure/a20722505/history-of-steel/" target="_blank" class="c-news-item__link">Read Full Article »</a></p>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section class="subscribe">
+			<div class="container">
+				<article class="c-subscribe">
+					<form action="#" class="c-subscribe__form">
+						<label for="input" class="c-subscribe__form__drop-zone">Subscribe to Newsletter</label>
+						<fieldset class="c-subscribe__form__fieldset">
+							<input id="input" type="text" name="input" class="c-subscribe__form__input" placeholder="Enter your email">
+							<button type="submit" class="c-subscribe__form__submit" >Subscribe now</button>
+						</fieldset>
+					</form>
+				</article>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="section-head">
+					<h2 class="section-head-heading">Get in Touch.</h2>
+					<p class="section-head-text">We understand your requirement and provide quality works.</p>
+				</div>
+				<form action="#" class="c-contact-form">
+					<input type="text" class="c-contact-form__input" placeholder="Your Name" required>
+					<input type="email" class="c-contact-form__input" placeholder="Your Email" required>
+					<input type="text" class="c-contact-form__input" placeholder="Subject" required>
+					<input type="text" class="c-contact-form__input" placeholder="Project Budget" required>
+					<textarea name="" id="" cols="30" rows="10" class="c-contact-form__textarea" placeholder="Your Message"></textarea>
+					<button type="submit" class="button c-contact-form__submit">Send message</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<article class="contact-block">
+				<h2 class="logo">Alexis</h2>
+				<div class="contact-block1">
+					<h3 class="contact-block-heading">Alexis LLC.</h3>
+					<span class="contact-block-text">4125 Bringhton Circle Road</span>
+					<span class="contact-block-text">Little Falls, MN 56345</span>
+				</div>
+				<div class="contact-block2">
+					<h3 class="contact-block-heading">Alexis LLC UK.</h3>
+					<span class="contact-block-text">81 Golden Knowes Road</span>
+					<span class="contact-block-text">FRESHFIELD L37 6TP</span>
+				</div>
+				<div class="contact-follow">
+					<h3 class="contact-block-heading">Follow Us.</h3>
+					<div class="socials">
+						<a href="https://vk.com/aptem_oxa" target="_blank"><img src="icons/Facebook.svg" alt="Facebook"></a>
+						<a href="https://twitter.com/_7even_up_" target="_blank"><img src="icons/Twitter.svg" alt="Twitter"></a>
+						<a href="https://www.instagram.com/7_even_up/" target="_blank"><img src="icons/Inst.svg" alt="Instagram"></a>
+						<a href="#" target="_blank"><img src="icons/Google.svg" alt="Google+"></a>
+					</div>
+				</div>
+			</article>
+		</div>
+	</footer>
+	<script src="scripts/spin.js"></script>
+	<script src="scripts/scroll.js"></script>
+	<script src="scripts/main.js"></script>
 </body>
 </html>
